@@ -1,10 +1,9 @@
 import React from 'react';
-// import Cabecera from './Cabecera';
+import Cabecera from './Cabecera';
 import Paper from '@material-ui/core/Paper';
-// import { Redirect, Route, Switch } from 'react-router-dom';
-import { Redirect, Switch } from 'react-router-dom';
-// import routes from '../../routes';
-// import Footer from './Footer';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import routes from '../../routes';
+import Footer from './Footer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 function Layout() {
@@ -14,10 +13,10 @@ function Layout() {
             <React.Fragment>
                 <CssBaseline />
                 <Paper elevation={4}>
-                    {/* <Cabecera /> */}
+                    <Cabecera />
                 </Paper>
                 <Switch>
-                    {/* {routes.map((route) => {
+                    {routes.map((route) => {
                         return route.component ? (
                             <Route
                                 key={route.id}
@@ -28,10 +27,10 @@ function Layout() {
                                     <route.component key={route.id} {...props} />
                                 )} />
                         ) : (null);
-                    })} */}
+                    })}
                     <Redirect to="/login" />
                 </Switch>
-                {/* <Footer /> */}
+                <Footer />
             </React.Fragment>
     );
 }

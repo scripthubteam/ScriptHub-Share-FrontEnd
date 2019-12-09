@@ -80,8 +80,11 @@ export default function Login() {
     };
 
     const ingresar = () => {
-        setIrInicio(false)
-        setAviso(true)
+        if (body) {
+            setIrInicio(true)
+        } else {
+            setAviso(true)
+        }
     }
 
     const onChange = (e) => {
@@ -128,7 +131,7 @@ export default function Login() {
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar} src='https://i.imgur.com/lEVEyiW.jpg' alt='...' />
                     <Typography component="h1" variant="h5" color='secondary'>
-                        SH Share
+                        Script hub share
           			</Typography>
                     <TextField
                         variant="outlined"
