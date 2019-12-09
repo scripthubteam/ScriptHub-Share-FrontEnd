@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -130,9 +129,7 @@ export default function Login() {
             <Grid item xs={12} sm={8} md={5} component={Paper} elevation={10} square>
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar} src='https://i.imgur.com/lEVEyiW.jpg' alt='...' />
-                    <Typography component="h1" variant="h5" color='secondary'>
-                        Script hub share
-          			</Typography>
+                    <Typography component="h1" variant="h5" color='secondary'>Script hub share</Typography>
                     <TextField
                         variant="outlined"
                         margin="normal"
@@ -164,10 +161,9 @@ export default function Login() {
                         variant="contained"
                         color="primary"
                         className={classes.submit}
-                        onClick={() => ingresar()}
-                    >
+                        onClick={() => ingresar()}>
                         Ingresar
-            			</Button>
+                        </Button>
                     <Box mt={5}>
                         <Copyright />
                     </Box>
