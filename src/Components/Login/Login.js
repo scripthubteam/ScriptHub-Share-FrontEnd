@@ -33,7 +33,7 @@ const imagen = Math.floor(Math.random() * (1 - 4) + 4)
 
 const useStyles = makeStyles(theme => ({
     root: {
-        height: '100vh',
+        height: '100vh'
     },
     image: {
         backgroundImage: `url(${imagen === 1 ? 'https://i.imgur.com/8INJcrg.jpg' : imagen === 2 ? 'https://i.imgur.com/x3FKKfS.jpg' : imagen === 3 ? 'https://i.imgur.com/h45pApP.jpg' : ''})`,
@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
-        color: theme.palette.getContrastText(theme.palette.primary.main),
+        color: theme.palette.getContrastText(theme.palette.primary.main)
     },
     close: {
         padding: theme.spacing(0.5)
